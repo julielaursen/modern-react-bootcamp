@@ -4,9 +4,24 @@
     <meta charset="UTF-8" />
     <meta name=""viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Hello world</title>
+    <title>First component</title>
   </head>
   <body>
-    <h1>Hello world</h1>
+    <div id="root"></div>
+    <script type="text/babel">
+      function Hello() {
+        return (
+          <div>
+            <h1>Hello World!</h1>
+          </div>
+        )
+      }
+      const root = ReactDOM.createRoot(document.getElementById('root'))
+      root.render(<Hello />)
+    </script>
+    <script src="https://unpkg.com/react/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone"></script>
+    <script type="text/jsx"></script>
   </body>
 </html>
