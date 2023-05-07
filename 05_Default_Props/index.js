@@ -2,9 +2,8 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <h1>Loop demo</h1>
-        <Friend name="Elton" hobbies={['Piano', 'Singing', 'Dancing']} />
-        <Friend name="Frida" hobbies={['Painting', 'Poetry']} />
+        <Hello to="Ringo" from="Paul" bangs={4} />
+        <Hello to="George" />
       </div>
     )
   }
